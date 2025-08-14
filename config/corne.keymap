@@ -53,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6     &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6     &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp EQUAL
-&trans     &trans        &trans        &trans        &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans        &trans        &kp LGUI      &trans
-                                       &trans        &trans            &trans            &kp ENTER        &trans             &trans
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
+&trans     &trans        &trans        &trans        &trans        &trans          &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans        &kp EQUAL
+&trans     &trans        &trans        &trans        &trans        &trans          &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans        &trans
+                                       &trans        &trans        &trans          &kp ENTER     &kp LGUI          &trans
             >;
         };
 
