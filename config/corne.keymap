@@ -37,7 +37,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -52,7 +52,7 @@
             >;
         };
 
-        lower_layer {
+        LOWER {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -67,7 +67,7 @@
             >;
         };
 
-        raise_layer {
+        RAISE {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -78,11 +78,11 @@
 &trans  &trans  &trans  &trans         &trans          &kp PAGE_UP      &trans            &trans          &trans        &trans             &trans           &kp DELETE
 &trans  &trans  &trans  &kp HOME       &kp END         &kp PAGE_DOWN    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &kp C_MENU       &trans
 &trans  &trans  &trans  &kp C_AC_COPY  &kp C_AC_PASTE  &trans           &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-                        &kp ESCAPE     &trans          &kp BACKSPACE    &trans            &trans          &trans
+                        &trans         &trans          &kp BACKSPACE    &trans            &trans          &trans
             >;
         };
 
-        func_layer {
+        FUNC {
             bindings = <
 &trans  &kp F1      &kp F2   &kp F3  &kp F4  &kp F5           &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &trans
 &trans  &kp F11     &kp F12  &trans  &trans  &trans           &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR
