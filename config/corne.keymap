@@ -66,7 +66,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
 &trans     &trans        &trans        &trans        &trans        &trans          &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans        &kp EQUAL
-&trans     &trans        &trans        &trans        &trans        &kp DELETE      &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans        &trans
+&trans     &trans        &trans        &trans        &trans        &kp DELETE      &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans        &kp RCTRL
                                        &trans        &trans        &trans          &kp ENTER     &kp LGUI          &trans
             >;
         };
@@ -83,7 +83,7 @@
             bindings = <
 &trans  &trans  &trans    &trans       &trans         &trans           &trans            &trans          &trans        &trans             &trans           &kp DELETE
 &trans  &trans  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &kp K_MENU       &trans
-&trans  &trans  &trans    &kp K_COPY   &kp K_PASTE    &trans           &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans    &kp K_COPY   &kp K_PASTE    &trans           &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RCTRL
                           &trans       &trans         &kp BACKSPACE    &trans            &trans          &trans
             >;
         };
