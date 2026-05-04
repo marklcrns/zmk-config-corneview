@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano
-    shield: corne_left nice_view_adapter nice_luffy_gear_five #update entry
+    shield: nice_view_adapter nice_luffy_gear_five corne_left
   - board: nice_nano
-    shield: corne_right nice_view_adapter nice_luffy_gear_five #update entry
+    shield: nice_view_adapter nice_luffy_gear_five corne_right
