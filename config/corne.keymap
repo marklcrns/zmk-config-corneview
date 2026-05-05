@@ -11,11 +11,13 @@
 &lt {
     tapping-term-ms = <150>;
     quick-tap-ms = <100>;
+    flavor = "hold-preferred";
 };
 
 &mt {
     tapping-term-ms = <150>;
     quick-tap-ms = <100>;
+    flavor = "tap-unless-interrupted";
 };
 
 / {
