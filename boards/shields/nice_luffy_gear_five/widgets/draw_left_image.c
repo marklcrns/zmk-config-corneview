@@ -11,4 +11,3 @@ void draw_left_image(lv_obj_t *canvas) {
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
 }
-

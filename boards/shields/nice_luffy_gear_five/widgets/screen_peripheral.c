@@ -21,25 +21,15 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
-/**
- * Draw buffers
- **/
-
 static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_state *state) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 0);
     fill_background(canvas);
 
-    // Draw widgets
     draw_output_status(canvas, state);
     draw_battery_status(canvas, state);
 
-    // Rotate for horizontal display
     rotate_canvas(canvas, cbuf);
 }
-
-/**
- * Battery status
- **/
 
 static void set_battery_status(struct zmk_widget_screen *widget,
                                struct battery_status_state state) {
@@ -76,10 +66,6 @@ ZMK_SUBSCRIPTION(widget_battery_status, zmk_battery_state_changed);
 ZMK_SUBSCRIPTION(widget_battery_status, zmk_usb_conn_state_changed);
 #endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
 
-/**
- * Peripheral status
- **/
-
 static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
     return (struct peripheral_status_state){.connected = zmk_split_bt_peripheral_is_connected()};
 }
@@ -100,10 +86,6 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_peripheral_status, struct peripheral_status_s
                             output_status_update_cb, get_state)
 ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 
-/**
- * Initialization
- **/
-
 int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
     lv_obj_set_size(widget->obj, SCREEN_HEIGHT, SCREEN_WIDTH);
@@ -114,7 +96,7 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
 
     draw_right_image(widget->obj);
     // draw_right_animation(widget->obj);
-  
+
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
     widget_peripheral_status_init();

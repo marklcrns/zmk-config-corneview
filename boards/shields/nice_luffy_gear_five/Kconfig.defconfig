@@ -1,4 +1,4 @@
-if SHIELD_NICE_VIEW_SHIELD_BASE 
+if SHIELD_NICE_VIEW_SHIELD_BASE
 
 config LV_Z_VDB_SIZE
     default 100
@@ -30,18 +30,18 @@ config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 config NICE_RIGHT_ANIMATION
     bool "Enable animation on peripheral"
     default y
-    
+
 config NICE_LEFT_ANIMATION
     bool "Enable animation on peripheral"
     default y
 
 config NICE_RIGHT_ANIMATION_MS
     int "Animation length in milliseconds"
-    default 2400 
+    default 2400
 
 config NICE_LEFT_ANIMATION_MS
     int "Animation length in milliseconds"
-    default 2400 
+    default 2400
 
 config NICE_VIEW_WIDGET_STATUS
     select LV_USE_LABEL
@@ -57,4 +57,4 @@ if !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
 
 endif # !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
 
-endif # SHIELD_NICE_VIEW_SHIELD_BASE 
+endif # SHIELD_NICE_VIEW_SHIELD_BASE
